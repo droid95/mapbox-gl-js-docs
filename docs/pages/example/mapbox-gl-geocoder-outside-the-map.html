@@ -30,5 +30,5 @@ var geocoder = new MapboxGeocoder({
     mapboxgl: mapboxgl
 });
 
-geocoder.addTo('#geocoder')
+document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
 </script>
