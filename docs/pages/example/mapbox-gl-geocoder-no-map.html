@@ -22,14 +22,7 @@
 <script>
     var geocoder = new MapboxGeocoder({
         accessToken: mapboxgl.accessToken,
-        types: [
-            'country',
-            'region',
-            'place',
-            'postcode',
-            'locality',
-            'neighborhood'
-        ]
+        types: 'country,region,place,postcode,locality,neighborhood'
     });
 
     geocoder.addTo('#geocoder');
