@@ -136,7 +136,9 @@ In most cases, this verification will occur automatically wherever it is needed.
 <!--copyeditor ignore perform-->
 Expressions perform only one kind of implicit type conversion: a data expression used in a context where a [color](#types-color) is expected will convert a string representation of a color to a color value. In all other cases, if you want to convert between types, you must use one of the _type conversion_ expression operators: [`to-boolean`](#types-to-boolean), [`to-number`](#types-to-number), [`to-string`](#types-to-string), or [`to-color`](#types-to-color). For example, if you have a feature property that stores numeric values in string format, and you want to use those values as numbers rather than strings, you can use an expression such as `["to-number", ["get", "property-name"]]`.
 
-## Expression reference
+# Expression reference
+
+<!-- This h1 is an exception as the following headings need to be an h2 for scrollspy to work on the sidebar. See site.css for override styles for these headings. -->
 
 ## Types
 
